@@ -1,0 +1,29 @@
+.navLink {
+  text-decoration: none;
+  color: black;
+  font-weight: 700 !important;
+}
+.activeNavLink .MuiListItem-button {
+  background-color: #816ad6;
+  color: white;
+}
+.activeNavLink .MuiSvgIcon-root {
+  fill: white;
+}
+.navLink:hover .MuiSvgIcon-root {
+  fill: white;
+}
+.activeNavLink .MuiListItem-button::before{
+  content: "";
+  position: absolute;
+  left: -15px;
+  height: 100%;
+  width: 3px;
+  background-color: #816ad6;
+  top: 0;
+}
+
+.navLink .MuiListItem-button:hover {
+  background-color: #816ad6;
+  color: white;
+}

@@ -1,0 +1,15 @@
+.userCardContent{
+    position: relative;
+}
+.userCardContent::before{
+position: absolute;
+content: '';
+background-image: url('../../../assets/users.svg');
+background-repeat: no-repeat;
+background-size: cover;
+width: 130px;
+height: 130px;
+right: 5px;
+bottom: -15px;
+fill:red
+}
