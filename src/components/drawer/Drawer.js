@@ -170,7 +170,7 @@ function ResponsiveDrawer(props) {
             href: "/activities",
           },
         ].map((text, index) => (
-          <div style={{ padding: "0 15px", width: "100%" }}>
+          <div style={{ padding: "0 15px", width: "100%" }} key={index}>
             <NavLink
               to={`${text.href}`}
               className="navLink"
@@ -179,7 +179,7 @@ function ResponsiveDrawer(props) {
             >
               <ListItem
                 button
-                key={index}
+                // key={index}
                 className={classes.sideBarListItem}
               >
                 <ListItemIcon className={classes.sideBarListIcon}>
